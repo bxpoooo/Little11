@@ -1,4 +1,4 @@
-include $(THEOS)/makefiles/common.mk
+include $(git clone https://github.com/ryannair05/Little11.git)/makefiles/common.mk
 
 ARCHS = arm64 arm64e
 
@@ -7,7 +7,7 @@ little11prefs_FILES = L11RootListController.m L11AppSettingsController.m Ordered
 little11prefs_INSTALL_PATH = /Library/PreferenceBundles
 little11prefs_PRIVATE_FRAMEWORKS = Preferences SpringBoardServices OnBoardingKit
 
-include $(THEOS_MAKE_PATH)/bundle.mk
+include $(git clone https://github.com/ryannair05/Little11.git)/bundle.mk
 
 internal-stage::
 	$(ECHO_NOTHING)mkdir -p $(THEOS_STAGING_DIR)/Library/PreferenceLoader/Preferences$(ECHO_END)
